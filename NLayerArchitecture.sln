@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Architecture.BusinessLogic", "DotNet8.Architecture.BusinessLogic\DotNet8.Architecture.BusinessLogic.csproj", "{E583C500-0D32-4D78-9908-8D1F11157376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Architecture.DataAccess", "DotNet8.Architecture.DataAccess\DotNet8.Architecture.DataAccess.csproj", "{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{FF658C1C-3C21-4C51-8C48-9E2AC2F56901}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E583C500-0D32-4D78-9908-8D1F11157376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E583C500-0D32-4D78-9908-8D1F11157376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E583C500-0D32-4D78-9908-8D1F11157376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E583C500-0D32-4D78-9908-8D1F11157376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
