@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Architecture.DataAc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{FF658C1C-3C21-4C51-8C48-9E2AC2F56901}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Architecture.Presentation", "DotNet8.Architecture.Presentation\DotNet8.Architecture.Presentation.csproj", "{9B359C9A-7F7B-4A9C-99BD-D7ECC2255641}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0086B3D-2307-4FFC-B6F1-91F4FBFEA118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B359C9A-7F7B-4A9C-99BD-D7ECC2255641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B359C9A-7F7B-4A9C-99BD-D7ECC2255641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B359C9A-7F7B-4A9C-99BD-D7ECC2255641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B359C9A-7F7B-4A9C-99BD-D7ECC2255641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
