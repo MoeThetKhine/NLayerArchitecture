@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Architecture.DataAccess.Features.Blog
+﻿namespace DotNet8.Architecture.DataAccess.Features.Blog;
+
+public class DA_Blog
 {
-	public class DA_Blog
-	{
-	}
 }
