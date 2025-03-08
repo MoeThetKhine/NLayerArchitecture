@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotNet8.Architecture.DTO.Feature.PageSetting
 {
+
+	#region PageSettingModel
+
 	public class PageSettingModel
 	{
 		public int PageNo {  get; set; }
@@ -24,4 +27,6 @@ namespace DotNet8.Architecture.DTO.Feature.PageSetting
 			TotalCount = totalCount;
 		}
 	}
+
+	#endregion
 }
