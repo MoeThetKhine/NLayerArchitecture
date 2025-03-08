@@ -9,3 +9,9 @@ public class BlogListModel
 }
 
 #endregion
+
+public class BlogListModelV1
+{
+	public IQueryable<BlogModel> DataLst { get; set; }
+	public PageSettingModel PageSetting { get; set; }
+}
