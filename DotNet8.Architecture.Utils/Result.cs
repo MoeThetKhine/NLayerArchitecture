@@ -45,5 +45,15 @@ namespace DotNet8.Architecture.Utils
 			};
 		}
 
+		public static Result<T> UpdateSuccess(string message = "Update Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
+		{
+			return new Result<T>
+			{
+				IsSuccess = true,
+				Message = message,
+				StatusCode = statusCode
+			};
+		}
+
 	}
 }
