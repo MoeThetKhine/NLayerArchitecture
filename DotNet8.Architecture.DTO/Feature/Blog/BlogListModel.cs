@@ -1,6 +1,4 @@
-﻿using DotNet8.Architecture.DTO.Feature.PageSetting;
-
-namespace DotNet8.Architecture.DTO.Feature.Blog;
+﻿namespace DotNet8.Architecture.DTO.Feature.Blog;
 
 #region BlogListModel
 
