@@ -1,5 +1,4 @@
 ﻿using DotNet8.Architecture.DbService.AppDbContextModels;
-using DotNet8.Architecture.DTO.Feature.Blog;
 
 namespace DotNet8.Architecture.DataAccess.Features.Blog;
 
