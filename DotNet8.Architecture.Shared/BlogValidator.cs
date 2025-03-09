@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Architecture.Shared
+﻿namespace DotNet8.Architecture.Shared;
+
+internal class BlogValidator
 {
-	internal class BlogValidator
-	{
-	}
 }
