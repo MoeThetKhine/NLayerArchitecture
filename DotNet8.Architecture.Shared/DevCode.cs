@@ -7,5 +7,8 @@ namespace DotNet8.Architecture.Shared
 	{
 		public static string ToJson(this object obj) =>
 			JsonConvert.SerializeObject(obj, Formatting.Indented);
+
+		public static T ToObject<T>(this string jsonStr) => JsonConvert.DeserializeObject<T>(jsonStr)!;
+
 	}
 }
