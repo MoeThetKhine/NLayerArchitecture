@@ -10,6 +10,8 @@
     <ProjectReference Include="..\DotNet8.Architecture.DbService\DotNet8.Architecture.DbService.csproj" />
     <ProjectReference Include="..\DotNet8.Architecture.DTO\DotNet8.Architecture.DTO.csproj" />
     <ProjectReference Include="..\DotNet8.Architecture.Extensions\DotNet8.Architecture.Extensions.csproj" />
+    <ProjectReference Include="..\DotNet8.Architecture.Shared\DotNet8.Architecture.Shared.csproj" />
+    <ProjectReference Include="..\DotNet8.Architecture.Utils\DotNet8.Architecture.Utils.csproj" />
   </ItemGroup>
 
 </Project>
