@@ -2,6 +2,9 @@
 
 namespace DotNet8.Architecture.Shared
 {
+
+	#region DevCode
+
 	public static class DevCode
 	{
 		public static string ToJson(this object obj) =>
@@ -18,4 +21,6 @@ namespace DotNet8.Architecture.Shared
 		}
 
 	}
+
+	#endregion
 }
