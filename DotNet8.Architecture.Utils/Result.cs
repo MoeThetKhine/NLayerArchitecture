@@ -49,7 +49,9 @@ namespace DotNet8.Architecture.Utils
 				StatusCode = statusCode
 			};
 		}
-		#endregion	
+		#endregion
+
+		#region UpdateSuccess
 
 		public static Result<T> UpdateSuccess(string message = "Update Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 		{
@@ -60,6 +62,8 @@ namespace DotNet8.Architecture.Utils
 				StatusCode = statusCode
 			};
 		}
+
+		#endregion
 
 		public static Result<T> DeleteSuccess(string message = "Delete Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 		{
