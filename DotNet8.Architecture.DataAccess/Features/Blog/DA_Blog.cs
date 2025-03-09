@@ -33,11 +33,11 @@ public class DA_Blog
 
 			var pageSettingModel = new PageSettingModel(pageNo, pageSize, pageCount, totalCount);
 			response = Result<BlogListModel>.Success(
-				new BlogListModel
-				{
-					DataLst = lst.Select(x => x.ToModel()),
-					PageSetting = pageSettingModel
-				});
+			new BlogListModel
+			{
+				DataLst = lst.Select(x => x.ToModel()),
+				PageSetting = pageSettingModel
+			});
 
 		}
 		catch (Exception ex)
