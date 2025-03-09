@@ -15,6 +15,8 @@ public class DA_Blog
 		_context = context;
 	}
 
+	#region GetBlogsAsync
+
 	public async Task<Result<BlogListModel>> GetBlogsAsync(int pageNo, int pageSize, CancellationToken cancellationToken)
 	{
 		Result<BlogListModel> response;
@@ -50,4 +52,6 @@ public class DA_Blog
 		}
 		return response;
 	}
+
+	#endregion
 }
