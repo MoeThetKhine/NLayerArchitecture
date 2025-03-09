@@ -79,6 +79,8 @@ namespace DotNet8.Architecture.Utils
 
 		#endregion
 
+		#region Fail
+
 		public static Result<T> Fail(string message = "Failed.", EnumStatusCode statusCode = EnumStatusCode.BadRequest)
 		{
 			return new Result<T>
@@ -88,6 +90,8 @@ namespace DotNet8.Architecture.Utils
 				StatusCode = statusCode
 			};
 		}
+
+		#endregion
 
 		public static Result<T> Failure(Exception ex)
 		{
