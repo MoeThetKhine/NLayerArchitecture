@@ -13,6 +13,10 @@ namespace DotNet8.Architecture.Shared
 		public static bool IsNullOrEmpty(this string str) =>
 	   string.IsNullOrEmpty(str) || string.IsNullOrWhiteSpace(str);
 
+		public static IQueryable<TSource> Paginate<TSource>(this IQueryable<TSource> source, int pageNo, int pageSize)
+		{
+			return source.Skip((pageNo - 1) * pageSize).Take(pageSize);
+		}
 
 	}
 }
