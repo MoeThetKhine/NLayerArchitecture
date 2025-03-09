@@ -89,8 +89,6 @@ namespace DotNet8.Architecture.Utils
 			};
 		}
 
-#
-
 		public static Result<T> Failure(Exception ex)
 		{
 			return new Result<T>
