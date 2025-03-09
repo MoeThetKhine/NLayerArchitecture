@@ -1,6 +1,6 @@
 ﻿namespace DotNet8.Architecture.Shared
 {
-	internal class DevCode
+	public class DevCode
 	{
 	}
 }
