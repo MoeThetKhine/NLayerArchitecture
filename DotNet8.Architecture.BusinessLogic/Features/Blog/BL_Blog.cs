@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Architecture.BusinessLogic.Features.Blog
+﻿namespace DotNet8.Architecture.BusinessLogic.Features.Blog;
+
+internal class BL_Blog
 {
-	internal class BL_Blog
-	{
-	}
 }
