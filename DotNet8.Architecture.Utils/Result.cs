@@ -65,5 +65,14 @@ namespace DotNet8.Architecture.Utils
 			};
 		}
 
+		public static Result<T> Fail(string message = "Failed.", EnumStatusCode statusCode = EnumStatusCode.BadRequest)
+		{
+			return new Result<T>
+			{
+				IsSuccess = false,
+				Message = message,
+				StatusCode = statusCode
+			};
+		}
 	}
 }
