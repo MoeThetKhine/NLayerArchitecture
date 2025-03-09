@@ -10,5 +10,9 @@ namespace DotNet8.Architecture.Shared
 
 		public static T ToObject<T>(this string jsonStr) => JsonConvert.DeserializeObject<T>(jsonStr)!;
 
+		public static bool IsNullOrEmpty(this string str) =>
+	   string.IsNullOrEmpty(str) || string.IsNullOrWhiteSpace(str);
+
+
 	}
 }
