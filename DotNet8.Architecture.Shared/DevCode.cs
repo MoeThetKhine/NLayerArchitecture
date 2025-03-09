@@ -1,5 +1,4 @@
-﻿
-namespace DotNet8.Architecture.Shared;
+﻿namespace DotNet8.Architecture.Shared;
 
 #region DevCode
 
