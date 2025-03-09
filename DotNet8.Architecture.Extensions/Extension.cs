@@ -5,6 +5,8 @@ namespace DotNet8.Architecture.Extensions;
 
 public static class Extension
 {
+	#region ToModel
+
 	public static BlogModel ToModel(this TblBlog dataModel)
 	{
 		return new BlogModel
@@ -15,6 +17,8 @@ public static class Extension
 			BlogContent = dataModel.BlogContent,
 		};
 	}
+
+	#endregion
 
 	public static TblBlog ToEntity(this BlogRequestModel model)
 	{
