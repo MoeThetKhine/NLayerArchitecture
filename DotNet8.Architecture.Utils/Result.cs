@@ -65,6 +65,8 @@ namespace DotNet8.Architecture.Utils
 
 		#endregion
 
+		#region DeleteSuccess
+
 		public static Result<T> DeleteSuccess(string message = "Delete Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 		{
 			return new Result<T>
@@ -75,6 +77,8 @@ namespace DotNet8.Architecture.Utils
 			};
 		}
 
+		#endregion
+
 		public static Result<T> Fail(string message = "Failed.", EnumStatusCode statusCode = EnumStatusCode.BadRequest)
 		{
 			return new Result<T>
@@ -84,6 +88,8 @@ namespace DotNet8.Architecture.Utils
 				StatusCode = statusCode
 			};
 		}
+
+#
 
 		public static Result<T> Failure(Exception ex)
 		{
