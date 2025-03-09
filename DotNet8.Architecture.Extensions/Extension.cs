@@ -1,5 +1,5 @@
 ﻿namespace DotNet8.Architecture.Extensions;
 
-internal class Extension
+public class Extension
 {
 }
