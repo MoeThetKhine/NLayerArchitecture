@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Architecture.Extensions;
 
+#region Extension
+
 public static class Extension
 {
 	#region ToModel
@@ -31,3 +33,5 @@ public static class Extension
 
 	#endregion
 }
+
+#endregion
