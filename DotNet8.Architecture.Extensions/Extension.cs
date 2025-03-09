@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Architecture.Extensions
+﻿namespace DotNet8.Architecture.Extensions;
+
+internal class Extension
 {
-	internal class Extension
-	{
-	}
 }
