@@ -17,6 +17,8 @@ public class BL_Blog
 		_blogValidator = blogValidator;
 	}
 
+	#region GetBlogAsync
+
 	public async Task<Result<BlogListModel>> GetBlogAsync(int pageNo, int pageSize, CancellationToken cancellationToken)
 	{
 		Result<BlogListModel> response;
@@ -44,6 +46,8 @@ public class BL_Blog
 	result:
 		return response;
 	}
+
+	#endregion
 
 	public async Task<Result<BlogModel>> GetBlogByIdAsync(int id, CancellationToken cancellationToken)
 	{
