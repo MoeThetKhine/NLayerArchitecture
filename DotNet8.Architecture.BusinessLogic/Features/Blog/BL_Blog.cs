@@ -1,10 +1,4 @@
-﻿using DotNet8.Architecture.DataAccess.Features.Blog;
-using DotNet8.Architecture.DTO.Feature.Blog;
-using DotNet8.Architecture.Shared;
-using DotNet8.Architecture.Utils;
-using DotNet8.Architecture.Utils.Resources;
-
-namespace DotNet8.Architecture.BusinessLogic.Features.Blog;
+﻿namespace DotNet8.Architecture.BusinessLogic.Features.Blog;
 
 public class BL_Blog
 {
