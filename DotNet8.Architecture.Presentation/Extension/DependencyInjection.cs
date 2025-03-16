@@ -1,4 +1,5 @@
-﻿using DotNet8.Architecture.DbService.AppDbContextModels;
+﻿using DotNet8.Architecture.DataAccess.Features.Blog;
+using DotNet8.Architecture.DbService.AppDbContextModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotNet8.Architecture.Presentation.Extension
@@ -17,6 +18,11 @@ namespace DotNet8.Architecture.Presentation.Extension
 			);
 
 			return services;
+		}
+
+		private static IServiceCollection AddDataAccessService(this IServiceCollection services)
+		{
+			return services.AddScoped<DA_Blog>();
 		}
 	}
 }
