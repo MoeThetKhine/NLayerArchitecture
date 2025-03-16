@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotNet8.Architecture.BusinessLogic\DotNet8.Architecture.BusinessLogic.csproj" />
     <ProjectReference Include="..\DotNet8.Architecture.DataAccess\DotNet8.Architecture.DataAccess.csproj" />
     <ProjectReference Include="..\DotNet8.Architecture.DbService\DotNet8.Architecture.DbService.csproj" />
   </ItemGroup>
