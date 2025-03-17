@@ -9,6 +9,15 @@ namespace DotNet8.Architecture.Presentation.Extension
 	public  static class DependencyInjection
 	{
 
+		public static IServiceCollection AddDependencyInjection(this IServiceCollection services, WebApplicationBuilder builder)
+		{
+			return services
+				.AddDbContextService(builder)
+				.AddDataAccessService()
+				.AddBusinessLogicService()
+				.AddValidatorService();
+		}
+
 		private static IServiceCollection AddDbContextService(this IServiceCollection services, WebApplicationBuilder builder)
 		{
 			builder.Services.AddDbContext<AppDbContext>(opt =>
