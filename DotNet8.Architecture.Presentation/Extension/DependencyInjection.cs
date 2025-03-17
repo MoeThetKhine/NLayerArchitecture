@@ -22,6 +22,8 @@ namespace DotNet8.Architecture.Presentation.Extension
 
 		#endregion
 
+		#region AddDbContextService
+
 		private static IServiceCollection AddDbContextService(this IServiceCollection services, WebApplicationBuilder builder)
 		{
 			builder.Services.AddDbContext<AppDbContext>(opt =>
@@ -34,6 +36,8 @@ namespace DotNet8.Architecture.Presentation.Extension
 
 			return services;
 		}
+
+		#endregion
 
 		private static IServiceCollection AddDataAccessService(this IServiceCollection services)
 		{
