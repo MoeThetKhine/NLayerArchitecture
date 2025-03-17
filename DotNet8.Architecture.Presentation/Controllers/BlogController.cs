@@ -24,6 +24,8 @@ namespace DotNet8.Architecture.Presentation.Controllers
 
 		#endregion
 
+		#region GetBlogByIdAsync
+
 		[HttpGet("{id}")]
 
 		public async Task<IActionResult> GetBlogByIdAsync(int id, CancellationToken cancellationToken)
@@ -31,6 +33,8 @@ namespace DotNet8.Architecture.Presentation.Controllers
 			var result = await _bL_Blog.GetBlogByIdAsync(id, cancellationToken);
 			return Content(result);
 		}
+
+		#endregion
 
 	}
 }
