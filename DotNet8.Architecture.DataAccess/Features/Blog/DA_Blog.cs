@@ -77,6 +77,8 @@ public class DA_Blog
 
 	#endregion
 
+	#region AddBlogAsync
+
 	public async Task<Result<BlogModel>> AddBlogAsync(BlogRequestModel blogRequestModel, CancellationToken cancellationToken)
 	{
 		Result<BlogModel> response;
@@ -94,5 +96,7 @@ public class DA_Blog
 		}
 		return response;
 	}
+
+	#endregion
 
 }
