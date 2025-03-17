@@ -1,20 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace DotNet8.Architecture.Presentation.Controllers
+namespace DotNet8.Architecture.Presentation.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class BaseController : ControllerBase
 {
-	[Route("api/[controller]")]
-	[ApiController]
-	public class BaseController : ControllerBase
+
+	#region Content
+
+	protected IActionResult Content(object obj)
 	{
-
-		#region Content
-
-		protected IActionResult Content(object obj)
-		{
-			return Content(obj.ToJson(), "application/json");
-		}
-
-		#endregion
-
+		return Content(obj.ToJson(), "application/json");
 	}
+
+	#endregion
+
 }
