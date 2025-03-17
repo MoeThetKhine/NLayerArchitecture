@@ -57,10 +57,14 @@ namespace DotNet8.Architecture.Presentation.Extension
 
 		#endregion
 
+		#region AddValidatorService
+
 		private static IServiceCollection AddValidatorService(this IServiceCollection services)
 		{
 			return services.AddScoped<BlogValidator>();
 		}
+
+		#endregion
 
 	}
 }
