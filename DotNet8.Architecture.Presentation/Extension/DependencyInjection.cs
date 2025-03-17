@@ -9,6 +9,8 @@ namespace DotNet8.Architecture.Presentation.Extension
 	public  static class DependencyInjection
 	{
 
+		#region AddDependencyInjection
+
 		public static IServiceCollection AddDependencyInjection(this IServiceCollection services, WebApplicationBuilder builder)
 		{
 			return services
@@ -17,6 +19,8 @@ namespace DotNet8.Architecture.Presentation.Extension
 				.AddBusinessLogicService()
 				.AddValidatorService();
 		}
+
+		#endregion
 
 		private static IServiceCollection AddDbContextService(this IServiceCollection services, WebApplicationBuilder builder)
 		{
