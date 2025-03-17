@@ -13,12 +13,16 @@ namespace DotNet8.Architecture.Presentation.Controllers
 			_bL_Blog = bL_Blog;
 		}
 
+		#region GetBlogAsync
+
 		[HttpGet]
 		public async Task<IActionResult> GetBlogAsync(int pageNo, int pageSize, CancellationToken cancellationToken)
 		{
 			var result = await _bL_Blog.GetBlogAsync(pageNo, pageSize, cancellationToken);
 			return Content(result);
 		}
+
+		#endregion
 
 		[HttpGet("{id}")]
 
