@@ -1,4 +1,3 @@
-using DotNet8.Architecture.Presentation.Extension;
 
 var builder = WebApplication.CreateBuilder(args);
 
