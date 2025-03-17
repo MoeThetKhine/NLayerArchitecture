@@ -77,4 +77,22 @@ public class DA_Blog
 
 	#endregion
 
+	public async Task<Result<BlogModel>> AddBlogAsync(BlogRequestModel blogRequestModel, CancellationToken cancellationToken)
+	{
+		Result<BlogModel> response;
+
+		try
+		{
+			await _context.TblBlogs.AddAsync(blogRequestModel.ToEntity(), cancellationToken: cancellationToken);
+			await _context.SaveChangesAsync(cancellationToken);
+
+			response = Result<BlogModel>.SaveSuccess();
+		}
+		catch(Exception ex)
+		{
+			response = Result<BlogModel>.Failure(ex);
+		}
+		return response;
+	}
+
 }
