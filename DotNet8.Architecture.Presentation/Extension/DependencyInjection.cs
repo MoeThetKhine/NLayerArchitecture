@@ -48,10 +48,14 @@ namespace DotNet8.Architecture.Presentation.Extension
 
 		#endregion
 
+		#region AddBusinessLogicService
+
 		private static IServiceCollection AddBusinessLogicService(this IServiceCollection services)
 		{
 			return services.AddScoped<BL_Blog>();
 		}
+
+		#endregion
 
 		private static IServiceCollection AddValidatorService(this IServiceCollection services)
 		{
