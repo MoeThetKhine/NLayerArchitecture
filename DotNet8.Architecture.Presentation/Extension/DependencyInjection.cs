@@ -1,4 +1,5 @@
-﻿using DotNet8.Architecture.DataAccess.Features.Blog;
+﻿using DotNet8.Architecture.BusinessLogic.Features.Blog;
+using DotNet8.Architecture.DataAccess.Features.Blog;
 using DotNet8.Architecture.DbService.AppDbContextModels;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,5 +25,11 @@ namespace DotNet8.Architecture.Presentation.Extension
 		{
 			return services.AddScoped<DA_Blog>();
 		}
+
+		private static IServiceCollection AddBusinessLogicService(this IServiceCollection services)
+		{
+			return services.AddScoped<BL_Blog>();
+		}
+
 	}
 }
