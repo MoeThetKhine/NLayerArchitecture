@@ -20,5 +20,13 @@ namespace DotNet8.Architecture.Presentation.Controllers
 			return Content(result);
 		}
 
+		[HttpGet("{id}")]
+
+		public async Task<IActionResult> GetBlogByIdAsync(int id, CancellationToken cancellationToken)
+		{
+			var result = await _bL_Blog.GetBlogByIdAsync(id, cancellationToken);
+			return Content(result);
+		}
+
 	}
 }
