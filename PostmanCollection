@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "7ec6a6ce-aece-42f8-880e-d558882f1713",
+		"name": "ManualOcelot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35335614"
+	},
+	"item": [
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "Get Blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5211/api/gateway/Blog/GetBlogs?pageNo=1&pageSize=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5211",
+							"path": [
+								"api",
+								"gateway",
+								"Blog",
+								"GetBlogs"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5211/api/gateway/Blog/GetBlogs?pageNo=1&pageSize=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5211",
+									"path": [
+										"api",
+										"gateway",
+										"Blog",
+										"GetBlogs"
+									],
+									"query": [
+										{
+											"key": "pageNo",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 18 Mar 2025 14:15:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"Data\": {\r\n    \"DataLst\": [\r\n      {\r\n        \"BlogId\": 50024,\r\n        \"BlogTitle\": \"string\",\r\n        \"BlogAuthor\": \"string\",\r\n        \"BlogContent\": \"string\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 50023,\r\n        \"BlogTitle\": \"string22222222\",\r\n        \"BlogAuthor\": \"string222222222222222222222222\",\r\n        \"BlogContent\": \"string22222222222222222222222222222222222222222\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 50021,\r\n        \"BlogTitle\": \"Sample Title\",\r\n        \"BlogAuthor\": \"Sample Author\",\r\n        \"BlogContent\": \"Sample Content\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 50020,\r\n        \"BlogTitle\": \"Sample Title\",\r\n        \"BlogAuthor\": \"Sample Author\",\r\n        \"BlogContent\": \"Sample Content\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 50019,\r\n        \"BlogTitle\": \"Sample Title\",\r\n        \"BlogAuthor\": \"Sample Author\",\r\n        \"BlogContent\": \"Sample Content\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 50018,\r\n        \"BlogTitle\": \"string\",\r\n        \"BlogAuthor\": \"string\",\r\n        \"BlogContent\": \"string\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40077,\r\n        \"BlogTitle\": \"Blog Title 60\",\r\n        \"BlogAuthor\": \"Author 60\",\r\n        \"BlogContent\": \"Content of Blog 60\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40076,\r\n        \"BlogTitle\": \"Blog Title 59\",\r\n        \"BlogAuthor\": \"Author 59\",\r\n        \"BlogContent\": \"Content of Blog 59\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40075,\r\n        \"BlogTitle\": \"Blog Title 58\",\r\n        \"BlogAuthor\": \"Author 58\",\r\n        \"BlogContent\": \"Content of Blog 58\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40074,\r\n        \"BlogTitle\": \"Blog Title 57\",\r\n        \"BlogAuthor\": \"Author 57\",\r\n        \"BlogContent\": \"Content of Blog 57\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40073,\r\n        \"BlogTitle\": \"Blog Title 56\",\r\n        \"BlogAuthor\": \"Author 56\",\r\n        \"BlogContent\": \"Content of Blog 56\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40072,\r\n        \"BlogTitle\": \"Blog Title 55\",\r\n        \"BlogAuthor\": \"Author 55\",\r\n        \"BlogContent\": \"Content of Blog 55\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40071,\r\n        \"BlogTitle\": \"Blog Title 54\",\r\n        \"BlogAuthor\": \"Author 54\",\r\n        \"BlogContent\": \"Content of Blog 54\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40070,\r\n        \"BlogTitle\": \"Blog Title 53\",\r\n        \"BlogAuthor\": \"Author 53\",\r\n        \"BlogContent\": \"Content of Blog 53\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40069,\r\n        \"BlogTitle\": \"Blog Title 52\",\r\n        \"BlogAuthor\": \"Author 52\",\r\n        \"BlogContent\": \"Content of Blog 52\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40068,\r\n        \"BlogTitle\": \"Blog Title 51\",\r\n        \"BlogAuthor\": \"Author 51\",\r\n        \"BlogContent\": \"Content of Blog 51\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40067,\r\n        \"BlogTitle\": \"Blog Title 50\",\r\n        \"BlogAuthor\": \"Author 50\",\r\n        \"BlogContent\": \"Content of Blog 50\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40066,\r\n        \"BlogTitle\": \"Blog Title 49\",\r\n        \"BlogAuthor\": \"Author 49\",\r\n        \"BlogContent\": \"Content of Blog 49\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40065,\r\n        \"BlogTitle\": \"Blog Title 48\",\r\n        \"BlogAuthor\": \"Author 48\",\r\n        \"BlogContent\": \"Content of Blog 48\",\r\n        \"DeleteFlag\": null\r\n      },\r\n      {\r\n        \"BlogId\": 40064,\r\n        \"BlogTitle\": \"Blog Title 47\",\r\n        \"BlogAuthor\": \"Author 47\",\r\n        \"BlogContent\": \"Content of Blog 47\",\r\n        \"DeleteFlag\": null\r\n      }\r\n    ],\r\n    \"PageSetting\": {\r\n      \"PageNo\": 1,\r\n      \"PageSize\": 20,\r\n      \"PageCount\": 5,\r\n      \"TotalCount\": 94\r\n    }\r\n  },\r\n  \"Message\": \"Success.\",\r\n  \"IsSuccess\": true,\r\n  \"StatusCode\": 200\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogTitle\": \"string22222222222222222222222222222222222222\",\r\n    \"blogAuthor\": \"string\",\r\n    \"blogContent\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5211/api/gateway/Blog/CreateBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5211",
+							"path": [
+								"api",
+								"gateway",
+								"Blog",
+								"CreateBlog"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"blogTitle\": \"string22222222222222222222222222222222222222\",\r\n    \"blogAuthor\": \"string\",\r\n    \"blogContent\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5211/api/gateway/Blog/CreateBlog",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5211",
+									"path": [
+										"api",
+										"gateway",
+										"Blog",
+										"CreateBlog"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 18 Mar 2025 14:16:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"Data\": null,\r\n  \"Message\": \"Saving Successful.\",\r\n  \"IsSuccess\": true,\r\n  \"StatusCode\": 200\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"blogTitle\": \"string\",\r\n  \"blogAuthor\": \"string\",\r\n  \"blogContent\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5211/api/gateway/Blog/UpdateBlog/50023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5211",
+							"path": [
+								"api",
+								"gateway",
+								"Blog",
+								"UpdateBlog",
+								"50023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Blog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5211/api/gateway/Blog/DeleteBlog/50023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5211",
+							"path": [
+								"api",
+								"gateway",
+								"Blog",
+								"DeleteBlog",
+								"50023"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5211/api/gateway/Blog/DeleteBlog/50023",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5211",
+									"path": [
+										"api",
+										"gateway",
+										"Blog",
+										"DeleteBlog",
+										"50023"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 18 Mar 2025 14:26:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"Data\": null,\r\n  \"Message\": \"Update Successful.\",\r\n  \"IsSuccess\": true,\r\n  \"StatusCode\": 200\r\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
