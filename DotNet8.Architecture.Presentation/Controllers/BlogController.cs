@@ -1,4 +1,6 @@
-﻿namespace DotNet8.Architecture.Presentation.Controllers;
+﻿using DotNet8.Architecture.DTO.Feature.Blog;
+
+namespace DotNet8.Architecture.Presentation.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -35,6 +37,10 @@ public class BlogController : BaseController
 	#endregion
 
 	[HttpPost]
-	public async Task<IActionResult>CreateBlogAsync()
+	public async Task<IActionResult> CreateBlogAsync([FromBody] BlogRequestModel blogRequestModel, CancellationToken cancellationToken)
+	{
+		var result = await _bL_Blog.AddBlogAsync(blogRequestModel, cancellationToken);
+		return Content(result);
+	}
 
 }
