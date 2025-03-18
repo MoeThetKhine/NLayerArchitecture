@@ -132,4 +132,26 @@ public class BL_Blog
 
 	#endregion
 
+	public async Task<Result<BlogModel>> DeleteBlogAsync(int id, CancellationToken cancellationToken)
+	{
+		Result<BlogModel> response;
+
+		try
+		{
+			if (id <= 0)
+			{
+				response = Result<BlogModel>.Fail(MessageResource.InvalidId);
+				goto result;
+			}
+
+			response = await _dA_Blog.DeleteBlogAsync(id, cancellationToken);
+		}
+		catch (Exception ex)
+		{
+			response = Result<BlogModel>.Failure(ex);
+		}
+	result:
+		return response;
+	}
+
 }
