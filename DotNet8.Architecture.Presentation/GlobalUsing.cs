@@ -5,3 +5,4 @@ global using DotNet8.Architecture.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Mvc;
 global using DotNet8.Architecture.Presentation.Extension;
+global using DotNet8.Architecture.DTO.Feature.Blog;
