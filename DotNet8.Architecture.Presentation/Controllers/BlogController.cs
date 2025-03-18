@@ -34,4 +34,7 @@ public class BlogController : BaseController
 
 	#endregion
 
+	[HttpPost]
+	public async Task<IActionResult>CreateBlogAsync()
+
 }
