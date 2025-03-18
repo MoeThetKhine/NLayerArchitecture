@@ -70,4 +70,28 @@ public class BL_Blog
 
 	#endregion
 
+	public async Task<Result<BlogModel>> AddBlogAsync(BlogRequestModel blogRequestModel, CancellationToken cancellationToken)
+	{
+		Result<BlogModel> response;
+
+		try
+		{
+			var validationResult = await _blogValidator.ValidateAsync(blogRequestModel);
+			if (!validationResult.IsValid)
+			{
+				string errors = string.Join("", validationResult.Errors.Select(x => x.ErrorMessage));
+				response = Result<BlogModel>.Fail($"Error: {errors}");
+				goto result;
+			}
+
+			response = await _dA_Blog.AddBlogAsync(blogRequestModel, cancellationToken);	
+		}
+		catch(Exception ex)
+		{
+			response = Result<BlogModel>.Failure(ex);
+		}
+		result:
+		return response;
+	}
+
 }
