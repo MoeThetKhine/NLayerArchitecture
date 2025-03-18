@@ -98,4 +98,34 @@ public class BL_Blog
 
 	#endregion
 
+	public async Task<Result<BlogModel>> UpdateBlogAsync(BlogRequestModel blogRequestModel, int id,  CancellationToken cancellationToken)
+	{
+		Result<BlogModel> response;
+
+		try
+		{
+			var validationResult = await _blogValidator.ValidateAsync(blogRequestModel);
+			if (!validationResult.IsValid)
+			{
+				string errors = string.Join("", validationResult.Errors.Select(x => x.ErrorMessage));
+				response = Result<BlogModel>.Fail(errors);
+				goto result;
+			}
+
+			if (id <= 0)
+			{
+				response = Result<BlogModel>.Fail(MessageResource.InvalidId);
+				goto result;
+			}
+
+			response = await _dA_Blog.UpdateBlogAsyn(blogRequestModel,id, cancellationToken);
+		}
+		catch(Exception ex)
+		{
+			response = Result<BlogModel>.Failure(ex);
+		}
+		result:
+		return response;
+	}
+
 }
