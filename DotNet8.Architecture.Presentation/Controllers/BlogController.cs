@@ -13,7 +13,7 @@ public class BlogController : BaseController
 
 	#region GetBlogAsync
 
-	[HttpGet]
+	[HttpGet("GetBlogs")]
 	public async Task<IActionResult> GetBlogAsync(int pageNo, int pageSize, CancellationToken cancellationToken)
 	{
 		var result = await _bL_Blog.GetBlogAsync(pageNo, pageSize, cancellationToken);
@@ -24,7 +24,7 @@ public class BlogController : BaseController
 
 	#region GetBlogByIdAsync
 
-	[HttpGet("{id}")]
+	[HttpGet("GetBlogsById/{id}")]
 
 	public async Task<IActionResult> GetBlogByIdAsync(int id, CancellationToken cancellationToken)
 	{
@@ -36,7 +36,7 @@ public class BlogController : BaseController
 
 	#region CreateBlogAsync
 
-	[HttpPost]
+	[HttpPost("CreateBlog")]
 	public async Task<IActionResult> CreateBlogAsync([FromBody] BlogRequestModel blogRequestModel, CancellationToken cancellationToken)
 	{
 		var result = await _bL_Blog.AddBlogAsync(blogRequestModel, cancellationToken);
@@ -47,7 +47,7 @@ public class BlogController : BaseController
 
 	#region UpdateBlogAsync
 
-	[HttpPut("{id}")]
+	[HttpPut("UpdateBlog/{id}")]
 	public async Task<IActionResult> UpdateBlogAsync(BlogRequestModel blogRequest, int id ,CancellationToken cancellationToken)
 	{
 		var result = await _bL_Blog.UpdateBlogAsync(blogRequest, id, cancellationToken);
@@ -58,7 +58,7 @@ public class BlogController : BaseController
 
 	#region DeleteBlogAsync
 
-	[HttpDelete("{id}")]
+	[HttpDelete("DeleteBlog/{id}")]
 	public async Task<IActionResult> DeleteBlogAsync(int id, CancellationToken cancellationToken)
 	{
 		var result = await _bL_Blog.DeleteBlogAsync(id, cancellationToken);
