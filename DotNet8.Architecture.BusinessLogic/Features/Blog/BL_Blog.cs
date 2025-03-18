@@ -132,6 +132,8 @@ public class BL_Blog
 
 	#endregion
 
+	#region DeleteBlogAsync
+
 	public async Task<Result<BlogModel>> DeleteBlogAsync(int id, CancellationToken cancellationToken)
 	{
 		Result<BlogModel> response;
@@ -153,5 +155,7 @@ public class BL_Blog
 	result:
 		return response;
 	}
+
+	#endregion
 
 }
